@@ -13,16 +13,16 @@ export default function ContactUS(){
 const styles = StyleSheet.create({
   header: {
     flex:3,
-    width:100%,
+    width:"100%",
     
   },
   body:{
     flex:5,
-    width:100%,
+    width:"100%",
   },
   footer:{
     flex:2,
-    width:100%,
+    width:"100%",
 
   }
 });
