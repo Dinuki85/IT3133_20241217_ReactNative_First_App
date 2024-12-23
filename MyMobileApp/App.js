@@ -3,6 +3,8 @@ import { StyleSheet, View, ScrollView } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Home from './components/Home';
+import ContactUs from './components/ContactUs';
+
 
 export default function App() {
   return (
@@ -11,6 +13,7 @@ export default function App() {
         <ScrollView>
           <View style={styles.container}>
             <Home />
+            <ContactUs/>
 
             <StatusBar style="auto" />
           </View>
