@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { PaperProvide, Text } from 'react-native-paper';
+import { StyleSheet, View } from 'react-native';
+import { PaperProvider, Text } from 'react-native-paper';
 
 export default function App() {
   return (
