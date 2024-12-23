@@ -1,17 +1,20 @@
+import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Divider  , Text, TextInput } from 'react-native-paper';
 
 export default function ContactUs() {
+  const [name,setName] = useState();
+
   return (
     <>
       <View style={styles.header}>
-        <Text variant="headlineLarge">Contact US</Text>
+        <Text variant="headlineLarge" >Contact US</Text>
         <Divider />
 
       </View>
       <View style={styles.body}>
         <View style={styles.input}>
-        <TextInput label="Name" mode='outlined' />
+        <TextInput label="Name" mode='outlined' value={name} onChangeText={setName}/>
         </View>
         <View style={styles.input}>
         <TextInput label="Email" mode='outlined' keyboardType='email-address'/>
@@ -25,7 +28,7 @@ export default function ContactUs() {
         <TextInput label="Message" mode='outlined' multiline numberOfLines={5} />
 
         </View>
-      
+      <Text>{name}</Text>
       
 
       </View>

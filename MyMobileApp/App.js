@@ -1,15 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, ScrollView } from 'react-native';
+import { StyleSheet, View, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Home from './components/Home';
 import ContactUs from './components/ContactUs';
+import { KeyboardAvoidingView } from 'react-native-web';
 
 
 export default function App() {
   return (
     <PaperProvider>
       <SafeAreaView>
+        <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <ScrollView>
           <View style={styles.container}>
            
@@ -18,6 +20,7 @@ export default function App() {
             <StatusBar style="auto" />
           </View>
         </ScrollView>
+        </KeyboardAvoidingView>
       </SafeAreaView>
     </PaperProvider>
 
