@@ -1,17 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
 import { PaperProvider, Text, Divider } from 'react-native-paper';
 import Home from './components/Home';
 
 export default function App() {
   return (
     <PaperProvider>
-      <View style={styles.container}>
-        <Home/>
-      
-        <StatusBar style="auto" />
-      </View>
+      <ScrollView>
+        <View style={styles.container}>
+          <Home />
 
+          <StatusBar style="auto" />
+        </View>
+      </ScrollView>
     </PaperProvider>
 
   );
@@ -24,5 +25,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
- 
+
 });
