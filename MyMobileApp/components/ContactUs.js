@@ -10,7 +10,7 @@ export default function ContactUs() {
 
       </View>
       <View style={styles.body}>
-
+      <TextInput label="Email" />
 
 
       </View>

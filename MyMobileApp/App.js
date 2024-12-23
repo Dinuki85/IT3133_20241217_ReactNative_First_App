@@ -12,7 +12,7 @@ export default function App() {
       <SafeAreaView>
         <ScrollView>
           <View style={styles.container}>
-            <Home />
+           
             <ContactUs/>
 
             <StatusBar style="auto" />
