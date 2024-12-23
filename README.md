@@ -4,21 +4,21 @@ This is the README file for the  React Native app, outlining the project's purpo
 
 <h2>Project Overview</h2>
 
-The Fieta app is a simple React Native application that demonstrates the usage of React Native Paper components for UI, along with essential features such as safe area context handling and styled text. The app includes a single Home component with a headline, styled body text, and a button.
+<p>The Fieta app is a simple React Native application that demonstrates the usage of React Native Paper components for UI, along with essential features such as safe area context handling and styled text. The app includes a single Home component with a headline, styled body text, and a button.</p>
 
 <h2>Features</h2>
 
 <b>React Native Paper Integration</b>: Utilized for beautiful, Material Design-styled components.<br/>
 
-Safe Area Context: Ensures the app layout avoids overlapping with system UI elements.
+<b>Safe Area Context</b>: Ensures the app layout avoids overlapping with system UI elements.</br>
 
-Scroll View Support: Allows scrolling through long content.
+<b>Scroll View Support</b>: Allows scrolling through long content.</br>
 
-Styled Components: Applied custom styles to align the content visually.
+<b>Styled Components</b>: Applied custom styles to align the content visually.
 
-Installed Packages
+<h2>Installed Packages</h2>
 
-Dependencies
+<h3>Dependencies</h3>
 
 @expo/metro-runtime (~4.0.0): Used internally by Expo for Metro bundler runtime.
 
@@ -40,89 +40,80 @@ react-native-vector-icons (^10.2.0): Library for customizable vector icons.
 
 react-native-web (~0.19.13): Enables React Native components to run in a web environment.
 
-DevDependencies
+<h3>DevDependencies</h3>
 
 @babel/core (^7.20.0): Compiler for converting modern JavaScript into a compatible format.
 
-Code Structure
+<h2>Code Structure</h2>
 
-components/Home.js
+<h3>components/Home.js</h3>
 
-The Home component includes:
+<h4>The Home component includes:</h4>
 
-Text: Displays a headline and body text using variants such as headlineLarge and bodyMedium.
+<strong>Text</strong>: Displays a headline and body text using variants such as headlineLarge and bodyMedium.<br/>
 
-Divider: Adds a horizontal line to visually separate content.
+<strong>Divider</strong>: Adds a horizontal line to visually separate content.<br/>
 
-Button: Provides a Material Design-styled button with an icon.
+<strong>Button</strong>: Provides a Material Design-styled button with an icon.<br/>
 
 Custom styles applied to ensure padding and justified text alignment.
 
-App.js
+<h3>App.js</h3>
 
-The main entry point of the app, which:
+<h3>The main entry point of the app, which:</h3>
 
-Wraps the application in a PaperProvider for theming support.
+Wraps the application in a PaperProvider for theming support.<br/>
 
-Uses SafeAreaView to ensure layout avoids system UI overlap.
+Uses SafeAreaView to ensure layout avoids system UI overlap.<br/>
 
-Includes a ScrollView to make long content scrollable.
+Includes a ScrollView to make long content scrollable.<br/>
 
-Embeds the Home component.
+Embeds the Home component.<br/>
 
-package.json
+<h4>package.json</h4>
 
-Contains metadata about the project, including dependencies, devDependencies, and scripts for running the app on different platforms (Android, iOS, Web).
+Contains metadata about the project, including dependencies, devDependencies, and scripts for running the app on different platforms (Android, iOS, Web).<br/>
 
-How to Run the App
 
-Install dependencies:
+<h3>How to Run the App</h3>
 
-npm install
+Install dependencies:npm install<br/>
 
-Start the app:
+Start the app:npx expo start<br/>
 
-npm start
+Run on a specific platform:<br/>
 
-Run on a specific platform:
+Android: npm run android<br/>
 
-Android: npm run android
+iOS: npm run ios<br/>
 
-iOS: npm run ios
+Web: npm run web<br/>
 
-Web: npm run web
-
-Custom Styling
+<h3>Custom Styling</h3>
 
 The app includes custom styling for body text to ensure:
+Proper padding around the content.<br/>
 
-Proper padding around the content.
+Justified text alignment for better readability.<br/>
 
-Justified text alignment for better readability.
-
-Styles are defined using React Native's StyleSheet:
-
+Styles are defined using React Native's StyleSheet:<br/><br/>
 const styles = StyleSheet.create({
   body: {
     padding: 10,
     textAlign: "justify",
   },
 });
+<br/>
+<br/>
 
 <h1>Key Functionality</h1>
 
-Material Design Components: The app leverages React Native Paper for creating a polished user interface.
+Material Design Components: The app leverages React Native Paper for creating a polished user interface.<br/>
 
-Scrollable Content: Long text content is scrollable using ScrollView.
+Scrollable Content: Long text content is scrollable using ScrollView.<br/>
 
-Safe Layout: SafeAreaView ensures content respects safe areas on devices with notches or rounded edges.
+Safe Layout: SafeAreaView ensures content respects safe areas on devices with notches or rounded edges.<br/>
 
-Contribution
 
-Feel free to contribute by submitting issues or pull requests. Make sure to follow best practices and test your changes before submitting.
-
-License
-
-This project is licensed under the MIT License.
 
 
