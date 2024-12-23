@@ -1,9 +1,10 @@
 import { StyleSheet, View } from 'react-native';
-import { PaperProvider, Text, Divider } from 'react-native-paper';
+import {  Text, Divider } from 'react-native-paper';
 
 export default function Home(){
     return(
-        <Text variant="headlineLarge">Headline Large</Text>
+        <View>
+             <Text variant="headlineLarge">Headline Large</Text>
       <Divider />
       <Text variant="bodyMedium" style={styles.body}>
       Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.
@@ -17,6 +18,8 @@ Save time in Word with new buttons that show up where you need them. To change t
 Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
 
         </Text> 
+        </View>
+       
 
     );
 }
