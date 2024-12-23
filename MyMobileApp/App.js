@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import { PaperProvider, Text } from 'react-native-paper';
+import { PaperProvider, Text, Divider } from 'react-native-paper';
 
 export default function App() {
   return (
     <PaperProvider>
       <View style={styles.container}>
       <Text variant="headlineLarge">Headline Large</Text>
+      <Divider />
       <Text variant="bodyMedium" style={styles.body}>
       Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.
       
