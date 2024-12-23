@@ -1,4 +1,4 @@
-<h1>React Native App</h1> 
+<h1>React Native First App</h1> 
 
 This is the README file for the  React Native app, outlining the project's purpose, structure, and dependencies.</br>
 
