@@ -46,7 +46,7 @@ export default function Home() {
         Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.
 
       </Text>
-      <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
+      <Button icon="camera" mode="outlined" onPress={() => console.log('Pressed')}>
         Press me
       </Button>
     </>
